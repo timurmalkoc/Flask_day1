@@ -1,0 +1,6 @@
+#Vritual Environment
+venv/
+venv
+instance/*
+__pycache__
+__pycache__/
