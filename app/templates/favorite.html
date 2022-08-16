@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Favorite list{% endblock title %}
+
+{% block content %}
+<h1>Favorite List</h1>
+
+{% for favorite in fav %}
+    <ul>
+        <li>{{ favorite.title() }}</li>
+    </ul>
+{% endfor %}
+
+{% endblock content %}

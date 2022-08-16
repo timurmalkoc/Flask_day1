@@ -5,6 +5,7 @@ from flask import render_template
 def index():
     return render_template('index.html')
 
-
-if __name__ == '__main__':
-    app.debug = True
+@app.route('/favorite')
+def favorite():
+    fav = ['art','soccer','travel','cooking','reading']
+    return render_template('favorite.html', fav=fav)
